@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    width:98vw;
+    height:100vh;
+    /* overflow-x: hidden; */
+}
+/* ========== Navigation ========= */
+nav {
+    height:60px;
+    width:100%;
+    display: flex;
+    position:fixed;
+    padding-top: 13px;
+    transition:all 1s;
+    z-index:100;
+}
+.bgcolor {
+    background-color: black;
+}
+.navigation-buttons li {
+    float:left;
+    padding-top: 10px;
+    padding-left: 25px;
+    list-style-type: none;
+}
+.navigation-buttons li a {
+    text-decoration: none;
+    color:rgb(243, 234, 234);
+    transition: .7s;
+    font-size: 15px;
+}
+.navigation-buttons li a:hover {
+    color:rgb(209, 195, 195);
+}
+.nav-links{
+    display: none;
+}
+@media all and (max-width:1200px){
+    .nav-links{
+        display:block;
+        color:white;
+    }
+    ul {
+        display:none;
+    }
+} 
+span {
+    color:white;
+    cursor: default;
+    font-weight: 400px;
+    padding-left: 15px;
+}
+.search {
+    position: absolute;
+    top:30px;
+    right:5px;
+    font-size: 300px;
+    color:white;
+}
+.logo {
+    padding-top: 5px;
+    margin-left:65px;
+    width:120px;
+    height: 40px;
+    position: relative;     
+}
+
+
+/*========== Banner ============== */
+.banner {
+    background-image: url(money\ heist.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:98.8vw;
+    /* background-attachment: scroll; */
+    height: 105vh;
+}
+.banner-faded {
+    margin-top: 20px;
+    height: 13rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37, 37, 37, .62),#111);
+}
+.title {
+    margin-top: 30px;
+    margin-left: 70px;
+    height:260px;
+    width:400px;
+}
+p {
+    padding-top:20px;
+    color:white;
+    font-size: 20px;
+}
+.banner-buttons {
+    margin-left:73px;
+    height: 300px;
+    width:600px;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    border:1px solid red;
+}
+button {
+    background-color: transparent;
+    color:white;
+    padding:7px;
+    border:1px solid white;
+}
+.trending {
+    height:80px;
+    width:500px;
+}
+.buttons {
+    margin-top: 30px;
+    margin-left:-3px;
+    border-radius: 4px;
+}
+.play {
+    padding:15px 30px;
+    background-color: white;
+    color:black;
+    margin-right:20px;
+}
+.info {
+    padding:15px 40px;
+    background-color: grey;
+    border:1px solid grey;
+
+}
+.play:hover {
+    opacity:.7;
+    color:white;
+    cursor:pointer;
+}
+.info:hover {
+    cursor:pointer;
+    opacity:.7;
+    color:white;
+    cursor:pointer;
+}
+#play-icon {
+    font-size:15px;
+    color:black
+}
+#info-icon {
+    font-size:15px;
+    color: white;
+}
+
+
+/* ========== row ============== */
+h1 {
+    color:white;
+    margin-left:75px;
+    padding-bottom:13px;
+    font-size: 20px;
+}
+.row1 {
+    margin-top: -100px;
+}
+.poster {
+    max-width: 240px;
+    /* object-fit: contain; */
+    margin-left: 5px;
+    transition: transform 420ms;
+    border-radius: 3px;
+}
+.poster:hover {
+    transform: scale(1.09);
+}
+.posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: 70px;
+    margin-bottom: 45px;
+    background-image: linear-gradient(to top,rgb(38, 37, 37),rgb(26, 25, 25));
+}
+.posters::-webkit-scrollbar {
+    display: none;
+}
+

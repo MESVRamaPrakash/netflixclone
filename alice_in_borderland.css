@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+/* ========= Banner ============ */
+.banner {
+    background-image: url(banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height:40rem;
+}
+.banner-title {
+    padding-top:15rem;
+    padding-left: 7rem;
+}
+.movie-title {
+    color:red;
+    font-size: 3rem;
+}
+.banner-desc {
+    max-width: 40rem;
+    color:white;
+    font-size: 1rem;
+    padding-left: 7rem;
+    padding-top: 30px;
+}
+/* ========== Trailer =========== */
+.trailer {
+    margin-top:1.5rem;
+    padding-left: 6.9rem;
+}
+.movie-desc {
+    display: flex;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+iframe {
+    width: 50rem;
+    height:30rem;
+}
+.about-cast {
+    color:white;
+    padding-left:4rem;
+}
+.about-cast-h1 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+    font-family: 'poppins',sans-serif;
+    color:red;
+}
+summary {
+    color:white;
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    font-family: 'poppins',sans-serif;
+}
+summary:hover {
+    cursor: pointer;
+}
+p {
+    padding-bottom: 25px;
+    padding-top: 0;
+}
